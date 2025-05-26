@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fond gris clair */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .login-title {
+    color: #E52B2D; /* Rouge Ekod */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    color: #555; /* Gris */
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password a {
+    color: #005C8D; /* Bleu Ekod */
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-login {
+    background-color: #005C8D; /* Bleu Ekod */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #00476A; /* Bleu foncé */
+  }
+  
+  .error-message {
+    color: #E52B2D;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #005C8D;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
