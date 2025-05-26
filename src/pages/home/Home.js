@@ -10,23 +10,22 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Vérifie si l'utilisateur est connecté
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setIsAuthenticated(!!user);
       setLoading(false);
     });
 
-    return () => unsubscribe();  // Nettoyage
+    return () => unsubscribe(); 
   }, []);
 
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
-        setIsAuthenticated(false); // Déconnexion
-        navigate("/"); // Redirection vers la page d'accueil
+        setIsAuthenticated(false); 
+        navigate("/"); 
       })
       .catch((error) => {
-        console.error(error); // Gérer les erreurs éventuelles
+        console.error(error); 
       });
   };
 
@@ -36,7 +35,6 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* Affichage de l'option de connexion ou déconnexion en fonction de l'authentification */}
       {!isAuthenticated ? (
         <>
           <div className="welcome-container">
@@ -54,7 +52,6 @@ const Home = () => {
         </div>
       )}
 
-      {/* Liens vers les pages d'annuaire et de job board */}
       <div className="links-container">
         <a href="/alumni" className="btn">Annuaire des Alumni</a>
         <a href="/jobBoard" className="btn">Offres de Stage et Emploi</a>

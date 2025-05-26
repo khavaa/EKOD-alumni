@@ -32,7 +32,6 @@ const SignUp = () => {
             .then((result) => {
                 setSuccess("Inscription réussie");
 
-                // Mettre à jour le nom de l'utilisateur
                 updateProfile(result.user, { 
                     displayName: name 
                 });

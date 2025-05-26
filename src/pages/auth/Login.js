@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { auth } from '../../firebaseConfig';
-import { Link, Navigate } from 'react-router-dom'; // Assurez-vous d'importer Navigate correctement
+import { Link, Navigate } from 'react-router-dom'; 
 import { sendPasswordResetEmail, signInWithEmailAndPassword } from 'firebase/auth';
-import './Login.css'; // Ajout d'un fichier CSS séparé pour la mise en style
+import './Login.css'; 
 
 const Login = () => {
   const [loginError, setLoginError] = useState('');
